@@ -3,12 +3,12 @@ import org.openqa.selenium.WebDriver;
 
 public class GenderSection extends BasePage {
 
-    private final By maleLabelLocator = new By.ByCssSelector("label[for='gender-radio-1']");
+    private final By maleLabelLocator = new By.ByCssSelector("label[for='gender-radio-1']");   //Tıklama işlemi için oluşturduğumuz locatrolar.
     private final By femaleLabelLocator =new By.ByCssSelector("label[for='gender-radio-2']");
     private final By otherLabelLocator = new By.ByCssSelector("label[for='gender-radio-3']");
 
     private final By maleRadiotButtonLocator = By.id("gender-radio-1");
-    private final By femaleRadiotButtonLocator = By.id("gender-radio-2");
+    private final By femaleRadiotButtonLocator = By.id("gender-radio-2");        //Kontrol işlemi için oluturduğumuz locatorlar.
     private final By otherRadioButtonLocator = By.id("gender-radio-3");
 
     public enum Genders {MALE , FEMALE , OTHER}
