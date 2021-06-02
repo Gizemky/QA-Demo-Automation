@@ -7,11 +7,6 @@ public class TestResultLogger implements TestWatcher {
 
    Log log = new Log();
 
-    @Override
-    public void testDisabled(ExtensionContext context, Optional<String> reason) {
-
-
-    }
 
     @Override
     public void testSuccessful(ExtensionContext context) {
@@ -19,11 +14,6 @@ public class TestResultLogger implements TestWatcher {
         log.info(testname + "Passed");
 
 
-
-    }
-
-    @Override
-    public void testAborted(ExtensionContext context, Throwable cause) {
 
     }
 
